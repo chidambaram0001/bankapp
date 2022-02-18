@@ -29,13 +29,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            
-          "configurations": {
-            "stage": {
-              "optimization": true,
-              "baseHref": "./", 
-            }
-          },
+         
             "styles": [
               "src/styles.css"
             ],
