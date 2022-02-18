@@ -36,6 +36,10 @@
             "scripts": []
           },
           "configurations": {
+            "stage": {
+             
+              "baseHref": "./",
+            },
             "production": {
               "budgets": [
                 {
