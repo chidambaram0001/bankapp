@@ -1,0 +1,41 @@
+<h1>tttable</h1>
+<div>
+  <input type="date" [(ngModel)] = "cDate"/>
+  <button (click)="filterData()">filter</button>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let data of objJson[0]|keyvalue" colspan="5" (click)="sort(data.key)">
+        {{data.key}}
+
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of objJson1">
+      <td colspan="5">
+        {{item.age}}
+
+      </td>
+      <td colspan="5">
+        {{item.amount}}
+
+      </td>
+      
+      <td  colspan="5">
+        {{item.date}}
+
+      </td>
+      <td colspan="5">
+        {{item.name}}
+
+      </td>
+     
+      
+    
+    </tr>
+  </tbody>
+</table>
+
+<a routerLink="/user">Go to users page</a>

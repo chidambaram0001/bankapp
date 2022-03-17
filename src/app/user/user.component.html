@@ -1,0 +1,22 @@
+<table  *ngIf="responseData && responseData.data">
+    <thead>
+        <tr>
+        <th>id</th>
+        <th>Email</th>
+        <th>first name</th>
+        <th>last name</th>
+        <th>face</th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let i of responseData.data" >
+            <td>{{i.id}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.first_name}}</td>
+            <td>{{i.last_name}}</td>
+            <td><img alt="faces" src="{{i.avatar}}"/></td>
+        </tr>
+    </tbody>
+</table>
+
+<a routerLink="">Go to dashboard</a>
